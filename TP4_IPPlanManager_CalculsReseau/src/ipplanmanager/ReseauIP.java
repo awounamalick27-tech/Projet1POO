@@ -50,7 +50,10 @@ public class ReseauIP {
     }
 
     public void afficher() {
-        System.out.println("Reseau : " + adresseReseau + "/" + masqueCidr);
-        System.out.println("Description : " + description);
-    }
+    System.out.println("Reseau : " + adresseReseau + "/" + masqueCidr);
+    System.out.println("Description : " + description);
+    System.out.println("Classe reseau : " + CalculateurReseau.obtenirClasseReseau(adresseReseau));
+    System.out.println("Masque decimal : " + CalculateurReseau.obtenirMasqueDecimal(masqueCidr));
+    System.out.println("Capacite maximale : " + CalculateurReseau.calculerNombreHotes(masqueCidr) + " hotes");
+}
 }
