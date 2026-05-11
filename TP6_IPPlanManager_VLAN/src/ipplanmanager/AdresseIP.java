@@ -23,9 +23,4 @@ public class AdresseIP {
     public void afficher() {
         System.out.println("Adresse IP : " + valeur);
     }
-
-    // Travail supplémentaire 
-    public boolean estAdresseLocale() {
-        return valeur != null && valeur.startsWith("192.");
-    }
 }
